@@ -1,0 +1,25 @@
+from abc import ABC, abstractmethod
+import math
+
+class Vehiculo(ABC):
+    @abstractmethod
+    def mover(self):
+        pass
+
+    @abstractmethod
+    def detener(self):
+        pass
+
+class Coche(Vehiculo):
+    def mover(self):
+        print("El coche está en movimiento")
+
+    def detener(self):
+        print("El coche se ha detenido")
+
+class Bicicleta(Vehiculo):
+    def mover(self):
+        print("La bicicleta está avanzando")
+
+    def detener(self):
+        print("La bicicleta se ha detenido")
